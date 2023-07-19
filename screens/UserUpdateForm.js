@@ -23,7 +23,7 @@ const UserUpdateForm = (props) => {
         const { name, email, age } = credentials;
         try {
             const token = await AsyncStorage.getItem('token');
-            const response = await fetch("http://192.168.1.7:5000/api/auth/updateuser", {
+            const response = await fetch("https://reviewcorn-backend.onrender.com/api/auth/updateuser", {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',

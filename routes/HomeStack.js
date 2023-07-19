@@ -7,7 +7,7 @@ import UserDetails from "../screens/UserDetails";
 import { TouchableWithoutFeedback } from "react-native-gesture-handler";
 import { globalStyles } from "../styles/global";
 import UserUpdateForm from "../screens/UserUpdateForm";
-import { Text, View } from "react-native";
+import { Text, TouchableOpacity, View } from "react-native";
 import UserReviews from "../screens/UserReviews";
 import ReviewDetailsUserSpecific from "../screens/ReviewDetailsUserSpecific";
 
@@ -34,9 +34,9 @@ const HomeStack = (props) => {
                     headerTitle: 'ReviewCorn',
                     headerTitleAlign: "center",
                     headerRight: () => (
-                        <TouchableWithoutFeedback onPress={() => { navigation.navigate("UserDetails") }}>
+                        <TouchableOpacity onPress={() => { navigation.navigate("UserDetails") }}>
                             <FontAwesome5 style={globalStyles.userIcon} name="user-alt" size={24} color="black" />
-                        </TouchableWithoutFeedback>
+                        </TouchableOpacity>
                     ),
                 })} />
             <Stack.Screen name="ReviewDetails"
@@ -71,9 +71,9 @@ const HomeStack = (props) => {
                     headerTitle: 'My Reviews',
                     headerTitleAlign: "center",
                     headerRight: () => (
-                        <TouchableWithoutFeedback onPress={() => { navigation.navigate("UserDetails") }}>
+                        <TouchableOpacity onPress={() => { navigation.navigate("UserDetails") }}>
                             <FontAwesome5 style={globalStyles.userIcon} name="user-alt" size={24} color="black" />
-                        </TouchableWithoutFeedback>
+                        </TouchableOpacity>
                     ),
                 })} />
             <Stack.Screen name="UserUpdateForm" >

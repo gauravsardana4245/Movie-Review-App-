@@ -23,7 +23,7 @@ const Home = (props) => {
     const [modalOpen, setModalOpen] = useState(false)
     const [reviews, setReviews] = useState([]);
 
-    const host = "http://192.168.1.7:5000";
+    const host = "https://reviewcorn-backend.onrender.com";
     const getReviews = async () => {
         try {
             const response = await fetch(`${host}/api/reviews/fetchallreviews`, {

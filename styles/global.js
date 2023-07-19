@@ -130,7 +130,7 @@ export const globalStyles = StyleSheet.create({
         // borderWidth: 1,
         // borderColor: "black",
         alignSelf: "center",
-        width: "60%",
+        width: "80%",
         marginTop: 30,
         textAlign: "center",
     },

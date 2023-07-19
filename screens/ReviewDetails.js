@@ -27,14 +27,14 @@ const ReviewDetails = (props) => {
     }
     useEffect(() => {
         const unsubscribe = navigation.addListener('focus', () => {
-           
+
             fetchUser(review.user);
         });
 
         return unsubscribe;
     }, []);
 
-    const host = "http://192.168.1.7:5000";
+    const host = "https://reviewcorn-backend.onrender.com";
     const fetchUser = async (id) => {
         try {
             const token = await AsyncStorage.getItem('token');

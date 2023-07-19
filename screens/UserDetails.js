@@ -27,7 +27,7 @@ const UserDetails = ({ navigation, onLogin }) => {
     const fetchUser = async () => {
         try {
             const token = await AsyncStorage.getItem('token');
-            const response = await fetch('http://192.168.1.7:5000/api/auth/getuser', {
+            const response = await fetch('https://reviewcorn-backend.onrender.com/api/auth/getuser', {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',

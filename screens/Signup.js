@@ -24,7 +24,7 @@ const Signup = (props) => {
     const handleSignup = async (credentials) => {
         const { name, email, password, age } = credentials;
         try {
-            const response = await fetch("http://192.168.1.7:5000/api/auth/createuser", {
+            const response = await fetch("https://reviewcorn-backend.onrender.com/api/auth/createuser", {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

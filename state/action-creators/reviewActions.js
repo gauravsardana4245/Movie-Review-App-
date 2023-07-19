@@ -1,6 +1,6 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-const host = "http://192.168.1.7:5000";
+const host = "https://reviewcorn-backend.onrender.com";
 export const getReviewsUserSpecific = () => {
     return async (dispatch) => {
         try {
